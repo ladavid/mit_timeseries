@@ -16,7 +16,7 @@ def OUProcess(x0=0,mu_n=0,lambda_n=0.1,sigma_n=0.1,dt_n=0.01):
     t_l = [0]
     # constants
     exp_n = np.exp(-lambda_n*dt_n)
-    while t_l[-1] < (t_max_n + dt_n):
+    while t_l[-1] < (t_max_n - dt_n):
         x_t0_n = x_l[-1]
         n_n = np.random.randn()
         term1_n = x_t0_n*exp_n
