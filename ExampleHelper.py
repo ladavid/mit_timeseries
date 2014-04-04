@@ -1,10 +1,10 @@
 #!/usr/bin/python
 #
-# simulate an OU process.  using van den Berg's solution.  
+# Helper methods for microbiota analysis pipeline demonstration
 
 import numpy as np
-
-# helper methods for example code
+import warnings
+warnings.filterwarnings("ignore") 
 
 def OUProcess(x0=0,mu_n=0,lambda_n=0.1,sigma_n=0.1,dt_n=0.01):
     ''' Simulate OU process using van den Bergs methods'''
